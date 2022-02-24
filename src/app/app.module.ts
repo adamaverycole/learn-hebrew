@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { ConjugationChartComponent } from './conjugation-chart/conjugation-chart.component';
 import { WordsComponent } from './words/words.component';
 import { WordDetailComponent } from './word-detail/word-detail.component';
+import { EnumToStringPipe } from './enum-to-string.pipe';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -16,6 +17,7 @@ import { WordDetailComponent } from './word-detail/word-detail.component';
     ConjugationChartComponent,
     WordsComponent,
     WordDetailComponent,
+    EnumToStringPipe,
   ],
   bootstrap: [AppComponent],
 })

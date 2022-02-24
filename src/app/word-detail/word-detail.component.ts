@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HebrewWord } from '../hebrew-word';
+import { SpeechType } from '../speech-type.enum'
 
 @Component({
   selector: 'app-word-detail',

@@ -4,11 +4,29 @@
 </div>
 
 <h2>Hebrew Words</h2>
-<ul class="words-list" *ngFor="let word of words">
-  <li>
-    <button type="button" (click)="onSelect(word)">
-      <span class="hebrew">{{ word.hebrew }}</span> :
-      <span>{{ word.english }}</span>
-    </button>
-  </li>
-</ul>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Hebrew</th>
+      <th scope="col">English</th>
+      <th scope="col">Pronunciation</th>
+      <th scope="col">Transliteration</th>
+      <th scope="col">Speech</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Strongs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let word of words" (click)="onSelect(word)">
+      <th scope="row" class="hebrew">
+        <span class="hebrew">{{ word.hebrew }}</span>
+      </th>
+      <td>{{ word.english }}</td>
+      <td>{{ word.pronunciation }}</td>
+      <td>{{ word.transliteration }}</td>
+      <td>{{ word.speech.toString() }}</td>
+      <td>{{ word.gender.toString() }}</td>
+      <td>{{ word.strongsNumber }}</td>
+    </tr>
+  </tbody>
+</table>

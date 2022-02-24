@@ -8,14 +8,14 @@ import { HebrewWord } from '../hebrew-word';
   styleUrls: ['./conjugation-chart.component.css'],
 })
 export class ConjugationChartComponent implements OnInit {
-  wordx: HebrewWord = {
-    english: 'man',
-    hebrew: 'אִישׁ',
-    pronunciation: 'eesh',
-    transliteration: "'îš",
-    strongsNumber: 'H376',
-    gender: Gender.masculine,
-  };
+  // wordx: HebrewWord = {
+  //   english: 'man',
+  //   hebrew: 'אִישׁ',
+  //   pronunciation: 'eesh',
+  //   transliteration: "'îš",
+  //   strongsNumber: 'H376',
+  //   gender: Gender.masculine,
+  // };
 
   @Input() word?: HebrewWord;
 

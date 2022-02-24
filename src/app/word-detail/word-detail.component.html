@@ -6,6 +6,7 @@
     <li>Transliteration: {{ word.transliteration }}</li>
     <li>Strongs Number: {{ word.strongsNumber }}</li>
     <li>Gender: {{ word.gender }}</li>
+    <li>Speech: {{ word.speech | enumToString: word.speech }}</li>
   </ul>
   <app-conjugation-chart [word]="word"></app-conjugation-chart>
 </div>
