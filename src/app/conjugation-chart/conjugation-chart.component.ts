@@ -9,8 +9,10 @@ import { HebrewWord } from '../hebrew-word';
 export class ConjugationChartComponent implements OnInit {
   word: HebrewWord = {
     english: 'man',
-    hebrew: 'איש',
-    transliteration: 'eesh',
+    hebrew: 'אִישׁ',
+    pronunciation: 'eesh',
+    transliteration: '\'îš',
+    strongsNumber: 'H376',
   };
 
   constructor() {}
