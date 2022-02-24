@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Gender } from '../gender.enum';
 import { HebrewWord } from '../hebrew-word';
 
 @Component({
@@ -7,13 +8,16 @@ import { HebrewWord } from '../hebrew-word';
   styleUrls: ['./conjugation-chart.component.css'],
 })
 export class ConjugationChartComponent implements OnInit {
-  word: HebrewWord = {
+  wordx: HebrewWord = {
     english: 'man',
     hebrew: 'אִישׁ',
     pronunciation: 'eesh',
-    transliteration: '\'îš',
+    transliteration: "'îš",
     strongsNumber: 'H376',
+    gender: Gender.masculine,
   };
+
+  @Input() word?: HebrewWord;
 
   constructor() {}
 

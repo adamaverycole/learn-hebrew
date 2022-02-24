@@ -1,0 +1,14 @@
+<div *ngIf="selectedWord">
+  <h3>Selected Word</h3>
+  <app-word-detail [word]="selectedWord"></app-word-detail>
+</div>
+
+<h2>Hebrew Words</h2>
+<ul class="words-list" *ngFor="let word of words">
+  <li>
+    <button type="button" (click)="onSelect(word)">
+      <span class="hebrew">{{ word.hebrew }}</span> :
+      <span>{{ word.english }}</span>
+    </button>
+  </li>
+</ul>

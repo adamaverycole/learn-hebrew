@@ -1,0 +1,11 @@
+<div class="word-detail">
+  <ul>
+    <li>English: {{ word.english }}</li>
+    <li>Hebrew: {{ word.hebrew }}</li>
+    <li>Pronunciation: {{ word.pronunciation }}</li>
+    <li>Transliteration: {{ word.transliteration }}</li>
+    <li>Strongs Number: {{ word.strongsNumber }}</li>
+    <li>Gender: {{ word.gender }}</li>
+  </ul>
+  <app-conjugation-chart [word]="word"></app-conjugation-chart>
+</div>
