@@ -1,5 +1,6 @@
 import { ConjugatedWordForm } from './conjugated-word-form';
+import { HebrewWord } from './hebrew-word';
 
 export interface WordConjugator {
-  conjugate(): ConjugatedWordForm;
+  Conjugate(word: HebrewWord): ConjugatedWordForm;
 }

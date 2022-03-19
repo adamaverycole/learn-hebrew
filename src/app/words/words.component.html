@@ -1,6 +1,9 @@
 <div *ngIf="selectedWord">
   <h3>Selected Word</h3>
-  <app-word-detail [word]="selectedWord"></app-word-detail>
+  <app-word-detail
+    [word]="selectedWord"
+    [conjugatedWord]="singularMasculineNoun"
+  ></app-word-detail>
 </div>
 
 <h2>Hebrew Words</h2>

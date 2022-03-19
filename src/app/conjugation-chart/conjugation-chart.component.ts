@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ConjugatedWordForm } from '../conjugated-word-form';
 import { Gender } from '../gender.enum';
 import { HebrewWord } from '../hebrew-word';
 
@@ -18,6 +19,7 @@ export class ConjugationChartComponent implements OnInit {
   // };
 
   @Input() word?: HebrewWord;
+  @Input() conjugatedWord: ConjugatedWordForm;
 
   constructor() {}
 

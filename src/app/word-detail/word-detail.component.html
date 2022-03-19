@@ -8,5 +8,8 @@
     <li>Gender: {{ word.gender }}</li>
     <li>Speech: {{ word.speech | enumToString: word.speech }}</li>
   </ul>
-  <app-conjugation-chart [word]="word"></app-conjugation-chart>
+  <app-conjugation-chart
+    [word]="word"
+    [conjugatedWord]="conjugatedWord"
+  ></app-conjugation-chart>
 </div>
